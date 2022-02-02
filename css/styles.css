@@ -1,0 +1,100 @@
+/*  цвет основного текста color: #757575;  */
+/* вторичный цвет текста color: #212121; */
+/* белый цвет color: #FFFFFF; */
+/*лого color: #000000; */
+/* ссылки в футер color: rgba(255, 255, 255, 0.6); */
+/* акцент color: #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона футер background: #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #e5e5e5;
+}
+
+ul {
+  list-style: none;
+}
+
+/* лого */
+
+.logo {
+  color: #000000;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-name {
+  color: var(--accent-color);
+}
+
+/* навигация сайта */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contacts .link {
+  color: var(--primary-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* секция герой */
+
+.hero .title {
+  color: #ffffff;
+}
+
+/* названия */
+
+.section .title {
+  color: var(--title-text-color);
+}
+
+/* преимущества */
+
+.title-benefits {
+  color: var(--title-text-color);
+}
+
+/* сотрудники */
+
+.title-name {
+  color: var(--title-text-color);
+}
+
+/* подвал */
+.footer .logo {
+  color: #ffffff;
+}
+.footer .logo:hover,
+.footer .logo:link {
+  color: var(--accent-color);
+}
+.footer-contacts .adress {
+  color: #ffffff;
+}
+.footer-contacts .adress:hover,
+.footer-contacts .adress:focus {
+  color: var(--accent-color);
+}
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
