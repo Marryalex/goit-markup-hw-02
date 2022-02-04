@@ -8,24 +8,68 @@
 /* цвет фона футер background: #2F303A */
 
 :root {
+  --primary-font-family: Roboto, sans-serif;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --logo-text-color: #000000;
+  --secodary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --hero-background-color: #2f303a;
+  --button-accent-color: #188ce8;
+}
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.button {
+  cursor: pointer;
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 body {
+  font-family: var(--primary-font-family);
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
 }
 
-ul {
-  list-style: none;
+.button.button-secondary {
+  font-weight: 500;
+  line-height: 1.63;
+  color: var(--title-text-color);
+  background-color: var(--secodary-background-color);
+}
+
+.button.button-secondary:hover,
+.button.button-secondary:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.button.button-secondary:active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Шапка */
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 /* лого */
 
 .logo {
-  color: #000000;
+  color: var(--logo-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .logo:hover,
 .logo:focus {
@@ -37,24 +81,54 @@ ul {
 
 /* навигация сайта */
 
-.site-nav .link {
+.site-nav-link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.contacts .link {
+
+.contact .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contact .link:hover,
+.contact .link:focus {
   color: var(--accent-color);
 }
 
 /* секция герой */
 
-.hero .title {
+.hero {
+  background-color: var(--hero-background-color);
+}
+.button.button-primary {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.button.button-primary:hover,
+.button.button-primary:focus {
+  background-color: var(--button-accent-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -62,39 +136,66 @@ ul {
 
 .section .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
 /* преимущества */
 
-.title-benefits {
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--title-text-color);
+}
+.description {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* сотрудники */
 
-.title-name {
+.section-team {
+  background-color: var(--secodary-background-color);
+}
+
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
   color: var(--title-text-color);
+}
+.post {
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* подвал */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
 .footer .logo {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer .logo:hover,
 .footer .logo:link {
   color: var(--accent-color);
 }
-.footer-contacts .adress {
-  color: #ffffff;
+.footer-contact .location {
+  color: var(--white-color);
 }
-.footer-contacts .adress:hover,
-.footer-contacts .adress:focus {
-  color: var(--accent-color);
+..footer-contact .link {
+  font-size: 14px;
+  line-height: 1.71;
 }
-.footer-contacts .link {
+.footer-contact-mail,
+.footer-contact-phone {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+.footer-contact .link:hover,
+.footer-contact .link:focus {
   color: var(--accent-color);
 }
