@@ -197,7 +197,8 @@ body {
 .footer-contact .location {
   color: var(--white-color);
 }
-..footer-contact .link {
+.footer-contact .link {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
